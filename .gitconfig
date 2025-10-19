@@ -1,12 +1,13 @@
 [alias]
-	a = add
-	b = branch -avv
+	a = branch --all --verbose
+	b = branch --list
 	c = checkout
-	d = branch -d
-	f = fetch --all -ap
-	m = commit -m
-	r = reset HEAD~
-	s = !git f && echo '-------' && git b && echo '-------' && git status -s
+	d = branch --delete
+	f = fetch --all --append --prune
+	l = log --pretty=oneline
+	r = reset --soft
+	s = status --short
+	u = !git f && echo '-------' && git l -5 && echo '-------' && git a && echo '-------' && git s
 
 [core]
 	editor = vim
