@@ -8,9 +8,6 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
-# setup shell environment for brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -33,6 +30,12 @@ if [ -n "$BASH_VERSION" ]; then
       fi
     fi
 fi
+
+# setup shell environment for brew
+#eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# setup shell environment for cargo
+#. "$HOME/.cargo/env"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then

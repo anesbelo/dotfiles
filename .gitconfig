@@ -6,7 +6,7 @@
 	l = log --oneline --graph
 	r = reset --soft
 	s = status --short
-	u = !git f && echo '-------' && git l HEAD~1..origin && echo '-------' && git s && echo '-------' && git b
+	u = !git f && echo '-------' && git l origin~1..HEAD && echo '-------' && git s && echo '-------' && git b
 
 [core]
 	editor = vim
