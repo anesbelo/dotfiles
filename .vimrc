@@ -16,25 +16,25 @@ filetype plugin indent on
 "
 " Settings
 "
-set noerrorbells		        " No beeps.
-set number			            " Show lines number.
-set backspace=indent,eol,start	" Allow backspacing over everything in insert mode.
-set ruler			            " Show the cursor position all the time.
-set showcmd			            " Show (partial) command in status line.
+set noerrorbells                " No beeps.
+set number                      " Show lines number.
+set backspace=indent,eol,start  " Allow backspacing over everything in insert mode.
+set ruler                       " Show the cursor position all the time.
+set showcmd                     " Show (partial) command in status line.
 
-set splitright			        " Split vertical windows right to the current windows
-set splitbelow			        " Split horizontal windows below to the current windows
-set encoding=UTF-8		        " Set default encoding to UTF-8
-set autowrite			        " Automatically save before commands like :next and :make
-set autoread			        " Automatically reread changed files.
-set laststatus=2		        " Always display the status line.
+set splitright                  " Split vertical windows right to the current windows
+set splitbelow                  " Split horizontal windows below to the current windows
+set encoding=UTF-8              " Set default encoding to UTF-8
+set autowrite                   " Automatically save before commands like :next and :make
+set autoread                    " Automatically reread changed files.
+set laststatus=2                " Always display the status line.
 
 
-set incsearch			        " Incremental search.
-set hlsearch			        " Highlight found searches.
-set ignorecase			        " Do case insensitive matching.
-set smartcase			        " Do smart case matching.
-set ttyfast			            " Speed up scrolling in Vim.
+set incsearch                   " Incremental search.
+set hlsearch                    " Highlight found searches.
+set ignorecase                  " Do case insensitive matching.
+set smartcase                   " Do smart case matching.
+set ttyfast                     " Speed up scrolling in Vim.
 
 " Formatting settings
 set wrap

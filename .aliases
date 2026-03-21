@@ -1,10 +1,8 @@
-#!/bin/bash
-
-# Enable aliases to be sudo’ed
+# enable aliases to be sudo’ed
 alias sudo='sudo '
 
-# List all files in long format
+# list all files in long format
 alias l='ls -lhF'
 
-# List all files in long format, including dot files
+# list all files in long format, including dot files
 alias la='ls -lAhF'

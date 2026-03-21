@@ -1,11 +1,5 @@
-#!/bin/bash
-
-# Set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    export PATH="$HOME/bin:$PATH"
-fi
-
-# Set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    export PATH="$HOME/.local/bin:$PATH"
-fi
+# set PATH so it includes GNU before macOS binaries
+#export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH";
+#export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH";
+#export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH";
+#export PATH="/opt/homebrew/opt/grep/libexec/gnubin:$PATH";

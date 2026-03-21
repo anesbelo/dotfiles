@@ -6,9 +6,12 @@ FILES := .hushlogin
 FILES += .aliases
 FILES += .exports
 FILES += .path
+FILES += .profile
 FILES += .bashrc
 FILES += .bash_profile
+FILES += .bash_logout
 FILES += .vimrc
+FILES += .tmux.conf
 FILES += .gitconfig
 
 RM := rm -f

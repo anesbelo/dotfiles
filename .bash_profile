@@ -1,6 +1,4 @@
-#!/bin/bash
-
-# Load .bashrc, which loads: ~/.{aliases,exports,path}
-if [[ -r "${HOME}/.bashrc" ]]; then
-	. "${HOME}/.bashrc"
+# load .profile if it exists
+if [[ -r "${HOME}/.profile" ]]; then
+	. "${HOME}/.profile"
 fi
