@@ -6,7 +6,9 @@
 	l = log --oneline --graph
 	r = reset --soft
 	s = status --short
-	u = !git f && echo '-------' && git l origin~1..HEAD && echo '-------' && git s && echo '-------' && git b
+
+	l-diff = !git l $([ "$(git rev-list --count origin)" -gt 1 ] && echo "origin^..")
+	b-sync = !git f && echo '-------' && git l-diff && echo '-------' && git s && echo '-------' && git b
 
 [core]
 	editor = vim
