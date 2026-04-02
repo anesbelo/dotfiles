@@ -7,7 +7,7 @@
 	r = reset --soft
 	s = status --short
 
-	l-diff = !git l $([ "$(git rev-list --count origin)" -gt 1 ] && echo "origin^..")
+	l-diff = !git l $([ "$(git rev-list --count origin ^HEAD)" -gt 0 ] && echo "origin ^HEAD^" || ([ "$(git rev-list --count HEAD ^origin)" -gt 0 ] && echo "HEAD ^origin^" || echo "-1"))
 	b-sync = !git f && echo '-------' && git l-diff && echo '-------' && git s && echo '-------' && git b
 
 [core]
