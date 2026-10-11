@@ -1,0 +1,4 @@
+background-opacity = 0.98
+font-feature = -calt
+theme = Catppuccin Mocha
+shell-integration-features = ssh-env,ssh-terminfo

@@ -6,3 +6,6 @@ export EDITOR=/usr/bin/vim;
 
 # silence locale warning on bash v5.3+
 #export LC_COLLATE="C";
+
+# silence podman external compose warning
+#export PODMAN_COMPOSE_WARNING_LOGS=0;
