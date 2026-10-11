@@ -18,7 +18,7 @@ EOF
     mkdir -p "${PLUGINS_DIR}/$(dirname "${repository}")"
     git clone --depth=1 --filter=tree:0 ${branch_or_revision} \
       "https://github.com/${repository}.git" "${PLUGINS_DIR}/${repository}" \
-      2>&1 >/dev/null | head -1
+      2>&1 | tee | head -1
   done
 }
 
